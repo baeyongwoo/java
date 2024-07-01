@@ -1,0 +1,13 @@
+package io;
+
+import house.HouseKim;
+
+public class AccessTest  extends HouseKim{
+	public static void main(String[] args) {
+		HouseKim hk = new HouseKim();
+		
+		AccessTest at = new AccessTest();
+		
+		
+	}
+}

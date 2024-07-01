@@ -1,0 +1,10 @@
+package house;
+
+public class HouseKim {
+	public String name;
+	private String address;
+	protected String subject; 
+	String id;
+	
+}
+

@@ -1,0 +1,21 @@
+interface Predator{
+	//추상메서드 {}이 없음 선언만 함
+	String getFood();
+}
+
+class Tiger implements Predator{
+
+	@Override
+	public String getFood() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+}
+
+
+public class InterfaceTest {
+
+	public static void main(String[] args) {
+		
+	}
+}

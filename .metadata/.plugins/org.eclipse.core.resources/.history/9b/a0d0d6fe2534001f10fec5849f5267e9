@@ -1,0 +1,29 @@
+interface Predator{
+	//추상메서드 {}이 없음 선언만 함
+	String getFood();
+}
+
+class Tiger implements Predator{
+
+	//메서드 오버라이딩. 부모의 추상메서드를 반드시 오버라이딩 해야함
+	@Override
+	public String getFood() {
+		return "apple";
+	}
+}
+
+
+public class InterfaceTest {
+	
+	public static void main(String[] args) {
+		//interface는 instatnce 생성 불가
+		
+		//자식 클래스를 이용해서 instance 생성
+		Tiger t = new Tiger();
+		System.out.println(t.getFood());
+		
+		Predator p = new Tiger(); // upcasting
+		p.getFood();
+		
+	}
+}

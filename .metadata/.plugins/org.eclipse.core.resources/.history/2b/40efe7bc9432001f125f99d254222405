@@ -1,0 +1,88 @@
+import java.util.ArrayList;
+import java.util.Arrays;import java.util.Comparator;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
+
+public class EX01 {
+
+	public static void main(String[] args) {
+		Integer a = Integer.valueOf(10);
+		int b = 5;
+		System.out.println(a + b);
+		System.out.println(a - b);
+		System.out.println(a * b);
+		System.out.println(a / b);
+		System.out.println(a % b);
+		
+		String s1 = "Hello Java";
+		s1.replaceAll("Hello Java", "World"); //원본이 안바뀐다.
+		System.out.println(s1);
+		
+		StringBuffer sb = new StringBuffer("Hello Java");
+		
+		sb.replace(0,5 ,"World");
+		System.out.println(sb);
+		
+		
+		int [] odds = {1,3,5,7,9};
+		
+		Arrays.stream(odds).boxed().forEach(i -> System.out.print(i + ", "));
+		
+		System.out.println();
+		
+		//타입 추론. compiler가 String일 것이라고 추측해서 처리해줨
+		ArrayList<String> pictches = new ArrayList<>(Arrays.asList("138", "129", "142"));
+		String result2 = String.join(",", pictches);  // csv생성
+		System.out.println(result2);
+		
+		pictches.sort(Comparator.naturalOrder()); // 오름차순
+		System.out.println(pictches);
+		pictches.sort(Comparator.reverseOrder()); // 내림차순
+		System.out.println(pictches);
+		
+		
+		pictches.stream().sorted(Comparator.naturalOrder());
+		
+		pictches.forEach(System.out::print);
+		
+		
+		
+		System.out.println("========================================");
+		
+		Map<String, String> map = new HashMap<>();
+		
+		map.putAll(Map.of(
+		    "people", "사람",
+		    "baseball", "야구",
+		    "game", "게임",
+		    "school", "학교",
+		    "study", "공부"
+		));
+		
+		System.out.println(map.get("people"));
+		
+		System.out.println(map.containsKey("people"));
+		System.out.println(map.containsKey("peoples"));
+		
+		System.out.println(map.remove("game")); //삭제 후 삭제값 리턴
+		System.out.println(map.size());
+		
+		System.out.println(map.keySet());
+		
+		for(String key : map.keySet()) {System.out.println(key);}
+		map.keySet().forEach(key -> System.out.println(key));
+		
+		
+		HashSet<String> set = new HashSet<String>(Arrays.asList("H", "e", "l", "l", "o"));
+	
+		System.out.println(set);
+		
+		
+		
+		
+		
+		
+	}
+	
+}

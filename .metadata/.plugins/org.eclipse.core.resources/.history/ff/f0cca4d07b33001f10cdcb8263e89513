@@ -1,0 +1,27 @@
+class Anima2{
+	String name;
+	void setName(String name) {
+		this.name = name;
+	}
+}
+
+class Dog extends Anima2{
+	void sleep() {
+		System.out.println(this.name + "(이)가 zzz");
+	}
+}
+
+
+
+
+
+public class Sample4 {
+	public static void main(String[] args) {
+		Dog dog = new Dog();
+		dog.setName("찰롱");
+		dog.sleep();
+		
+		Anima2 cat = new Dog();
+		
+	}
+}

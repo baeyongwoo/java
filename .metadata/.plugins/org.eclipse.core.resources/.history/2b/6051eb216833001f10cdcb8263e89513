@@ -1,0 +1,28 @@
+class Student{
+	
+	String name;
+	
+	
+	
+}
+
+
+
+public class ReferenceTest {
+	public static void main(String[] args) {
+		Student std1 = new Student();
+		Student std2 = new Student();
+		
+		std1.name = "홍길동";
+		System.out.println(std1.name);
+		std2.name = "도리도리";
+		System.out.println(std2.name);
+		
+		Student gamja;
+		gamja = std1;
+		
+		
+		
+		
+	}
+}

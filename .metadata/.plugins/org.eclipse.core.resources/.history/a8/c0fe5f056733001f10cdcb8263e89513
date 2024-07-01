@@ -1,0 +1,10 @@
+class Student{
+	private String name;
+	
+}
+
+
+
+public class ReferenceTest {
+
+}

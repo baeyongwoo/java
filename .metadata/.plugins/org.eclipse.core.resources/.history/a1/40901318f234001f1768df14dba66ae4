@@ -1,0 +1,18 @@
+
+public class ThreadTest extends Thread{
+	int seq;
+	public ThreadTest(int seq) {
+		this.seq = seq;
+	}
+	
+	@Override
+	public void run() {
+		System.out.println(this.seq + " thread start");
+		Thread.sleep(1000);
+		System.out.println(this.seq + "thread end");
+	}
+	
+	public static void main(String[] args) {
+		
+	}
+}

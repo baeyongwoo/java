@@ -1,0 +1,9 @@
+
+public class Calculator {
+	int result = 0;
+	
+	ind add(int num) {
+		result+=num;
+		return result;
+	}
+}

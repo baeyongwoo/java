@@ -1,0 +1,45 @@
+class Anima2{
+	String name;
+	void setName(String name) {
+		this.name = name;
+	}
+}
+
+class Dog extends Anima2{
+	void sleep() {
+		System.out.println(this.name + "(이)가 zzz");
+	}
+	
+}
+
+class HouseDog extends Dog{
+	@Override
+	void sleep() {
+		
+		System.out.println(this.name + "(이)가 zzz In House");
+	}
+	void sleep(int hour) {
+		System.out.println(this.name + "(이)가" + hour + "시간 동안 zzzz");
+	}
+	
+}
+
+
+
+
+
+public class Sample4 {
+	public static void main(String[] args) {
+		Dog dog = new Dog();
+		dog.setName("찰롱");
+		dog.sleep();
+		
+		Anima2 cat = new Dog();
+		
+		HouseDog hd = new HouseDog();
+		hd.setName("hd");
+		hd.sleep();
+		hd.sleep(3);
+		
+	}
+}

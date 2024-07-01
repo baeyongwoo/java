@@ -1,0 +1,29 @@
+
+class Animal{
+	String name;
+	public void setName(String name) {
+		this.name = name;
+	}
+}
+
+
+
+public class Ex02 {
+
+	public static void main(String[] args) {
+		Calculator cal =  new Calculator(); //Calcuator클래스로 instatnce 생성
+		
+		System.out.println(cal.add(120));
+		System.out.println(cal.add(120));
+		
+//		for(int i =0; i<5; i+=2) {
+//			for(int k=0; k<(4-i)/2; k++) {
+//				System.out.print(" ");
+//			}
+//			for(int j=0; j<=i; j++) {
+//				System.out.print("*");
+//			}
+//			System.out.println();
+//		}
+	}
+}
