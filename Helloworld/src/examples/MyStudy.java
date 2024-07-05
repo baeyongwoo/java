@@ -189,7 +189,7 @@ public class MyStudy {
 			System.out.println("로또 사기전 : " + money);
 			System.out.println("로또 산 금액 " + count*5000);
 			System.out.println("로또 구입 결과 : " + recev);
-			System.out.println("로또 사고 난 후 : " + (money - count*5000 + recev));
+			System.out.println("로또 사고 난 후 : " + (money  + recev));
 			if(count*5000>recev) {
 				System.out.println("로또하지마세요");
 			}else {
