@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="tfDepart "/>
+		<item key="selection" value="maxSize"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="maxsize"/>
+			<item value="circular_Queue"/>
 			<item value="tfDept"/>
 			<item value="List"/>
 			<item value="main"/>
@@ -21,10 +23,10 @@
 			<item value="connect"/>
 			<item value="Connection refused: connect"/>
 			<item value="localhost"/>
-			<item value="300"/>
-			<item value="c.add"/>
 		</list>
 		<list key="replacehistory">
+			<item value="maxSize"/>
+			<item value="circularQueue"/>
 			<item value="tfDepart "/>
 			<item value="add"/>
 			<item value="depart"/>
